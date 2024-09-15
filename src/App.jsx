@@ -1,9 +1,12 @@
+import Body from './components/Body'
+import Header from './components/Header'
 
 function App() {
 
   return (
     <>
-      <p className="text-green-500"> HEllo Ujjwal</p>
+    <Header />
+    <Body />
     </>
   )
 }
