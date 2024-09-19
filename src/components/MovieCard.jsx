@@ -1,16 +1,16 @@
 /* eslint-disable react/prop-types */
-import { IMG_CDN_URL } from "../utils/constants"
+import { IMG_CDN_URL } from "../utils/constants";
 
 const MovieCard = ({ posterPath }) => {
     return (
-        <div>
+        <div className="w-48 h-72 p-2 flex-shrink-0"> {/* Ensure fixed width, avoid shrinking */}
             <img 
-                className="w-36 pr-4"
                 src={IMG_CDN_URL + posterPath} 
-                alt="Movie Card" 
+                alt="Movie Poster" 
+                className="w-full h-full object-cover"  
             />
         </div>
-    )
+    );
 }
 
-export default MovieCard
+export default MovieCard;

@@ -8,7 +8,7 @@ const useMovieTrailer = (movieID) => {
 
     const getMovieVideos = async () => {
         const data = await fetch(
-            'https://api.themoviedb.org/3/movie/' + movieID + '/videos?language=en-US', 
+            'https://api.themoviedb.org/3/movie/' + movieID + '/videos?', 
             API_OPTIONS
         );
         const json = await data.json();
